@@ -1,0 +1,156 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #f9e8d9;
+  color: #072541;
+}
+
+.primary {
+  color: #072541;
+}
+.secondary {
+  color: #ec3521;
+}
+
+.contact-container {
+  background-color: #e5cb7a;
+  height: 40vh;
+  border-radius: 1rem;
+  box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+.reveal {
+  animation: reveal 1s both;
+}
+.reveal-footer {
+  animation: reveal linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% contain 0.5%;
+}
+
+.reveal-lg {
+  animation: reveal-lg 1.5s both 0.2s;
+}
+
+.hero-left {
+  animation: heroLeft linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% contain 100%;
+}
+
+.opa-reveal {
+  animation: opaReveal linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% contain 50%;
+}
+
+.reveal-left {
+  animation: leftToRight linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% contain 70%;
+}
+.reveal-right {
+  animation: rightToLeft linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% contain 70%;
+}
+.reveal-left-lg {
+  animation: leftToRight linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% contain 20%;
+}
+.reveal-right-lg {
+  animation: rightToLeft linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% contain 20%;
+}
+
+.scroll-reveal {
+  animation: revealBottom linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% contain 50%;
+}
+
+@keyframes rightToLeft {
+  from {
+    transform: translateX(15rem);
+    opacity: 0.2;
+  }
+  to {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+@keyframes leftToRight {
+  from {
+    transform: translateX(-15rem);
+    opacity: 0.2;
+  }
+  to {
+    transform: translateX(0rem);
+    opacity: 1;
+  }
+}
+@keyframes opaReveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes reveal {
+  from {
+    transform: translateY(-0.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+@keyframes revealBottom {
+  from {
+    transform: translateY(1rem);
+    opacity: 0.4;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+@keyframes reveal-lg {
+  from {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+@keyframes heroLeft {
+  from {
+    transform: translateX(70rem);
+  }
+  to {
+    transform: translateX(0rem);
+  }
+}
